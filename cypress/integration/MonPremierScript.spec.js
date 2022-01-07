@@ -24,7 +24,7 @@ describe('SWAG LABS',function() {
                 
         });
 
-        it('Authentification PWD InValide',function(){
+        it.only('Authentification PWD InValide',function(){
                 cy.visit('www.saucedemo.com');
                 cy.url().should('include','saucedemo');
                 cy.get('[data-test="username"]').type("standard_user");
